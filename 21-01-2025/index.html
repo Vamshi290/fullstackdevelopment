@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Weather App</h1>
+  
+  <div>
+    <label for="city">Enter City: </label>
+    <input type="text" id="city" placeholder="City name">
+    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="toggleChart('pie')">Show Pie Chart</button>
+  <button onclick="toggleChart('line')">Show Line Chart</button>
+  </div>
+
+  <h3>Weather Details</h3>
+  <p id="weatherResult">Weather information will be displayed here.</p>
+  <!-- Canvas for Pie Chart -->
+  <canvas id="weatherChart" width="400" height="400"></canvas>
+
+  <!-- Buttons to toggle between charts -->
+
+  <script src="chart.js"></script>
+</body>
+</html>
